@@ -6,12 +6,10 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-# Verify and format /dev/sda (Make sure you've performed this step manually)
+#
+pacman -S git --noconfirm
+git clone https://github.com/FreedomBen/arch-linux-install-scripts.git
 
-# Mount partitions (Make sure you've performed this step manually)
-
-# Chroot into the installation
-arch-chroot /mnt <<EOF
 
 # Create non-root user with wheel group access and passwordless sudo
 useradd -m -G wheel -s /bin/bash username
