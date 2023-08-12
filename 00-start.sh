@@ -1,8 +1,9 @@
 #/bin/bash
 
 pacman -Sy
+pacman-key --init
 
-pacman -S --noconfirm git
+pacman -S git
 
 git clone https://github.com/FreedomBen/arch-linux-install-scripts.git
 
