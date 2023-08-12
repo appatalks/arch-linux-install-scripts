@@ -23,7 +23,6 @@ echo         # Default start sector
 echo +512M   # 512MB EFI System Partition
 echo t       # Change partition type
 echo 1       # Select partition 1
-echo 1       # Change to EFI type (Code 1)
 echo n       # New partition
 echo 2       # Partition number 2
 echo         # Default start sector
